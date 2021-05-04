@@ -1,0 +1,66 @@
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --primary-white-color: #ffffff;
+  --accent-color: #2196f3;
+  --second-background-color: #f5f4fa;
+  --third-background-color: #2f303a;
+}
+/* цвет основного текста #757575 */
+/* вторичный цвет текста #212121 */
+/* белый #FFFFFF */
+/* акцент #2196F3 */
+/* вторичный цвет фона #F5F4FA #2F303A */
+body {
+  color: var(--primary-text-color);
+  background-color: var(--primary-white-color);
+}
+.logo {
+  color: var(--accent-color);
+}
+.list,
+.feature-list,
+.workers-list,
+.portfolio-list {
+  list-style: none;
+}
+/* Site nav */
+.site-nav .link {
+  color: var(--title-text-color);
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+/* Hero */
+.hero {
+  background-color: var(--third-background-color);
+}
+.hero-title {
+  color: var(--primary-white-color);
+}
+/* Section */
+
+.section-title,
+.feature-list .title,
+.workers-list .title,
+.portfolio-title {
+  color: var(--title-text-color);
+}
+/* Footer */
+.contacts {
+  background-color: var(--third-background-color);
+}
+.mail,
+.tel {
+  color: inherit;
+}
+.mail:hover,
+.tel:hover,
+.mail:focus,
+.tel:focus {
+  color: var(--accent-color);
+}
