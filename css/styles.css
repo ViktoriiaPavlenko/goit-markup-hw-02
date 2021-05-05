@@ -5,18 +5,13 @@
   --accent-color: #2196f3;
   --second-background-color: #f5f4fa;
   --third-background-color: #2f303a;
+  --second-logo-color: #000000;
+  --address-color: rgba(255, 255, 255, 0.6);
+  --button-bgc: #188ce8;
 }
-/* цвет основного текста #757575 */
-/* вторичный цвет текста #212121 */
-/* белый #FFFFFF */
-/* акцент #2196F3 */
-/* вторичный цвет фона #F5F4FA #2F303A */
 body {
   color: var(--primary-text-color);
   background-color: var(--primary-white-color);
-}
-.logo {
-  color: var(--accent-color);
 }
 .list,
 .feature-list,
@@ -24,6 +19,17 @@ body {
 .portfolio-list {
   list-style: none;
 }
+/* Logo */
+.logo {
+  color: var(--accent-color);
+}
+.studio {
+  color: var(--second-logo-color);
+}
+.studio-second {
+  color: var(--primary-white-color);
+}
+
 /* Site nav */
 .site-nav .link {
   color: var(--title-text-color);
@@ -35,6 +41,16 @@ body {
 .site-nav .link.current {
   color: var(--accent-color);
 }
+.mail,
+.tel {
+  color: inherit;
+}
+.mail:hover,
+.tel:hover,
+.mail:focus,
+.tel:focus {
+  color: var(--accent-color);
+}
 /* Hero */
 .hero {
   background-color: var(--third-background-color);
@@ -43,7 +59,6 @@ body {
   color: var(--primary-white-color);
 }
 /* Section */
-
 .section-title,
 .feature-list .title,
 .workers-list .title,
@@ -54,13 +69,38 @@ body {
 .contacts {
   background-color: var(--third-background-color);
 }
-.mail,
-.tel {
-  color: inherit;
+.second-mail,
+.second-tel {
+  color: var(--address-color);
 }
-.mail:hover,
-.tel:hover,
-.mail:focus,
-.tel:focus {
+.second-mail:hover,
+.second-mail:focus,
+.second-tel:hover,
+.second-tel:focus {
   color: var(--accent-color);
+}
+.address {
+  color: var(--primary-white-color);
+}
+/* Buttons */
+.first-button {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+  cursor: pointer;
+}
+.first-button:hover,
+.first-button:focus {
+  color: var(--primary-white-color);
+  background-color: var(--button-bgc);
+}
+
+.second-button {
+  color: var(--title-text-color);
+  background-color: var(--second-background-color);
+  cursor: pointer;
+}
+.second-button:hover,
+.second-button:focus {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
 }
